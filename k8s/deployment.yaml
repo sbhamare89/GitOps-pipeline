@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: nginxinc/nginx-unprivileged:latest
+          image: sbhamare/nginx-gitops:latest
           ports:
             - containerPort: 8080
               protocol: TCP
