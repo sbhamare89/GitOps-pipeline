@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 env:
-  IMAGE_NAME: sbhamare89/nginx-gitops
+  IMAGE_NAME: sbhamare/nginx-gitops
 
 jobs:
   build-and-push:
