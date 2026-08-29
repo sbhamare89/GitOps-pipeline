@@ -1,0 +1,27 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: learn-nginx
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: learning1
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    directory:
+      jsonnet:
+        tlas:
+        - name: ""
+          value: ""
+    path: k8s
+    repoURL: https://github.com/sbhamare89/GitOps-pipeline.git
+    targetRevision: main
+  syncPolicy:
+    automated:
+      enabled: true
+      prune: false
+      selfHeal: false
+    syncOptions:
+    - CreateNamespace=true
+
