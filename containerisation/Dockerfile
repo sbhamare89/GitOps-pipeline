@@ -1,5 +1,5 @@
 # Phase 2 — custom static page served by Nginx
-FROM nginx:alpine
+FROM nginxinc/nginx-unprivileged:alpine
 
 # Replace the default Nginx welcome page with our GitOps demo page
 COPY index.html /usr/share/nginx/html/index.html
