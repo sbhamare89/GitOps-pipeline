@@ -6,7 +6,6 @@ metadata:
   name: nginx-service
   namespace: learning1
 spec:
-  host: nginx-service-learning1.apps-crc.testing
   port:
     targetPort: http
   to:
