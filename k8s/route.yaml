@@ -4,7 +4,7 @@ metadata:
   labels:
     app: nginx
   name: nginx-service
-  namespace: learning1
+#  namespace: learning1
 spec:
   port:
     targetPort: http
