@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: new-deploy
-  namespace: myapp-project
   labels:
     app: nginx
 spec:
